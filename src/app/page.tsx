@@ -1,9 +1,11 @@
-import Card from "./Card";
+import Consultants from "./Consultants";
+import FindLawyer from "./FindLawyer";
 import Navbar from "./Navbar";
 
 export default function Home() {
   return (
-    <body className="bg-gradient-to-b from-orange-300 via-white to-green-200 text-black font-sans">
+      <body className="bg-gradient-to-b from-orange-300 via-white to-green-200 text-black font-sans">
+    
       <div className="container mx-auto p-4 md:p-8">
        <Navbar/>
 
@@ -29,26 +31,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-white rounded-lg p-6 shadow-md border border-gray-200 min-h-[200px]">
-            <h3 className="align-center text-2xl font-bold mb-4">Naya-mitra</h3>
-            <div className="space-y-3">
-              <div>
-                <span>
-                  Talk to our expert to understand your legal problem and the
-                  next steps.
-                </span>
-              </div>
-              <div
-                id="slider"
-                className="flex overflow-x-auto gap-8 scroll-smooth scrollbar-hide"
-              >
-                <Card name="Sahil"/>
-                <Card name="Hemant"/>
-                <Card name="Iyer"/>
-                <Card name="JSda"/>
-            </div>
-            </div>
-          </section>
+          <Consultants/>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <section className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
@@ -68,6 +51,7 @@ export default function Home() {
               </div>
             </section>
           </div>
+          <FindLawyer/>
         </main>
 
         <footer className="mt-16 pt-8 border-t border-gray-300 text-sm text-gray-600">
